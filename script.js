@@ -13,7 +13,7 @@ recipeCloseBtn.addEventListener('click', () => {
 
 
 function getMealList(){
-    let searchInputTxt = document.getElementById('search-input').value.trim();
+    let searchInputTxt = document.getElementById('search-input').value;
     fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${searchInputTxt}`)
     .then(response => response.json())
     .then(data => {
@@ -62,14 +62,17 @@ function mealRecipeModal(meal){
         <h2 class = "recipe-title">${meal.strMeal}</h2>
         <p class = "recipe-category">${meal.strCategory}</p>
         <div class = "recipe-instruct">
-            <h3>Instructions:</h3>
-            <p>${meal.strInstructions}</p>
-        </div>
-        <div class = "recipe-meal-img">
-            <img src = "${meal.strMealThumb}" alt = "">
-        </div>
-        <div class = "recipe-link">
-            <a href = "${meal.strYoutube}" target = "_blank">Watch Video</a>
+            <h3>Ingredient:</h3>
+            <p>${meal.strIngredient1}</p>
+            <p>${meal.strIngredient2}</p>
+            <p>${meal.strIngredient3}</p>
+            <p>${meal.strIngredient4}</p>
+            <p>${meal.strIngredient5}</p>
+            <p>${meal.strIngredient6}</p>
+            <p>${meal.strIngredient7}</p>
+            <p>${meal.strIngredient8}</p>
+            <p>${meal.strIngredient9}</p>
+            <p>${meal.strIngredient10}</p>
         </div>
     `;
     mealDetailsContent.innerHTML = html;

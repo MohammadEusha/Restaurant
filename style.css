@@ -12,7 +12,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-/*  */
+
 .btn{
     font-family: inherit;
     cursor: pointer;
@@ -24,7 +24,7 @@ body{
     margin-bottom: 1rem;
 }
 
-/*  */
+
 .container{
     min-height: 100vh;
 }
@@ -68,7 +68,7 @@ body{
 }
 #meal{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 2rem;
 }
 .meal-item{
@@ -101,7 +101,7 @@ body{
 }
 
 
-/* meal details */
+
 .meal-details{
     position: fixed;
     top: 25%;
@@ -117,7 +117,7 @@ body{
     display: none;
     padding: 2rem 0;
 }
-/* js related */
+
 .showRecipe{
     display: block;
 }
@@ -180,7 +180,7 @@ body{
 
 
 
-/*  */
+
 .notFound{
     grid-template-columns: 1fr!important;
     color: gray;
