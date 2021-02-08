@@ -5,118 +5,122 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body{
     font-weight: 300;
-    font-size: 1.05rem;
-    line-height: 1.6;
+    font-size: 20px;
+    line-height: 30px;
     font-family: 'Poppins', sans-serif;
 }
 
-
 .btn{
-    font-family: inherit;
     cursor: pointer;
     outline: 0;
-    font-size: 1.05rem;
-}
-.title{
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 30px;
 }
 
+.title{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
 
 .container{
-    min-height: 100vh;
+    min-height: 100%;
 }
+
 .food-container{
     max-width: 1280px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 35px;
     background: #fff;
     text-align: center;
 }
+
 .food-search{
-    margin: 2rem 0;
+    margin: 35px 0;
 }
+
 .food-search-box{
     width: 540px;
     margin-left: auto;
     margin-right: auto;
 }
-.search-control,
-.search-btn{
-    width: 100%;
-}
+
 .search-control{
-    padding: 0 1rem;
-    font-size: 1.1rem;
-    font-family: inherit;
-    border: 1px solid gray;
+    width: 100%;
+    height: 40px;
+    padding: 0 15px;
+    font-size: 20px;
+    border: 2px solid gray;
+    border-radius: 10px;
     color: gray;
 }
+
 .search-btn{
-    width: 55px;
+    width: 60px;
     height: 55px;
-    font-size: 1.8rem;
+    font-size: 30px;
     background: gray;
     color: #fff;
     border: none;
-    border-radius: 2rem;
+    border-radius: 35px;
     margin-top: 5px;
 }
-.food-result{
-    margin-top: 4rem;
-}
+
 #food{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 2rem;
+    gap: 35px;
 }
+
 .food-item{
-    border-radius: 1rem;
+    border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 4px 21px rgba(0, 0, 0, 0.79);
-    margin: 2rem 0;
+    box-shadow: 0px 10px 15px gray;
+    margin: 35px 0;
 }
+
 .food-img img{
     width: 100%;
     display: block;
 }
+
 .food-name{
-    padding: 1.5rem 0.5rem;
+    padding: 25px 10px;
 }
+
 .food-name h3{
-    font-size: 1.4rem;
+    font-size: 25px;
 }
+
 .ingredients-btn{
     text-decoration: none;
     color: #fff;
     background: gray;
     font-weight: 500;
-    font-size: 1.1rem;
-    padding: 0.75rem 0;
+    font-size: 20px;
+    padding: 10px 0;
     display: block;
     width: 175px;
-    margin: 1rem auto;
-    border-radius: 2rem;
+    margin: 15px;
+    border-radius: 10px;
 }
-
-
 
 .food-details{
     position: fixed;
-    top: 25%;
+    top: 20%;
     bottom: 25%;
-    left: 20%;
+    left: 25%;
+    right: 25%;
     align-items: center;
     color: #fff;
     background: gray;
-    border-radius: 1rem;
+    border-radius: 15px;
     width: 50%;
-    height: 50%;
-    overflow: scroll;
+    height: 70%;
+    overflow: hidden;
     display: none;
-    padding: 2rem 0;
+    padding: 35px 0;
 }
 
 .showIngredients{
@@ -124,13 +128,14 @@ body{
 }
 
 .food-details-container{
-    margin: 2rem;
+    margin: 35px;
 }
+
 .ingredients-close-btn{
     position: absolute;
-    right: 2rem;
-    top: 2rem;
-    font-size: 1.8rem;
+    right: 35px;
+    top: 35px;
+    font-size: 30px;
     background: #fff;
     border: none;
     width: 35px;
@@ -140,29 +145,25 @@ body{
     align-items: center;
     justify-content: center;
 }
+
 .ingredients-title{
     letter-spacing: 1px;
-    padding-bottom: 1rem;
+    padding-bottom: 15px;
 }
+
 .ingredients-category{
     background: #fff;
     font-weight: 600;
     color: gray;
     display: inline-block;
-    padding: 0.2rem 0.5rem;
-    border-radius: 0.3rem;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
-.ingredients-category{
-    background: #fff;
-    font-weight: 600;
-    color: gray;
-    display: inline-block;
-    padding: 0.2rem 0.5rem;
-    border-radius: 0.3rem;
-}
+
 .ingredients-description{
-    padding: 1rem 0;
+    padding: 15px;
 }
+
 .ingredients-food-img img{
     width: 100px;
     height: 100px;
@@ -170,22 +171,11 @@ body{
     margin: 0 auto;
     display: block;
 }
-.ingredients-link{
-    margin: 1.4rem 0;
-}
-.ingredients-link a{
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: 700;
-}
-
-
-
 
 .notFound{
     grid-template-columns: 1fr!important;
     color: gray;
-    font-size: 1.8rem;
+    font-size: 30px;
     font-weight: 600;
     width: 100%;
 }

@@ -27,7 +27,7 @@ function getFoodList(){
                         </div>
                         <div class = "food-name">
                             <h3>${meal.strMeal}</h3>
-                            <a href = "#" class = "ingredients-btn">Get ingredients</a>
+                            <a href = "#" class = "ingredients-btn">Get Ingredients</a>
                         </div>
                     </div>
                 `;
